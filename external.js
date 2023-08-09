@@ -34,9 +34,28 @@ function playRound(playerSelection, computerSelection){
 
 }
 //console.log("Choose either rock, paper, or scissors")
+var playerSelection = 0;
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+    button.addEventListener('click', function(e){
+        if(e.target.className == "rock"){
+            playerSelection = 0;
+        }
+        else if(e.target.className == "paper"){
+            playerSelection = 1;
+            
+        }
+        else{
+            playerSelection = 2; 
+            
+        }
+        
+    });
+    
+});
+//console.log(playerSelection);
+//const computerSelection = getComputerChoice();
+//console.log(computerSelection);
 
-const computerSelection = getComputerChoice();
-console.log(computerSelection);
-
-console.log(playRound(playerSelection, computerSelection));
+//console.log(playRound(playerSelection, computerSelection));
 
