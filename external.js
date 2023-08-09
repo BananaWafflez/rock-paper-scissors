@@ -34,7 +34,7 @@ function playRound(playerSelection, computerSelection){
 
 }
 //console.log("Choose either rock, paper, or scissors")
-const playerSelection = prompt("0. Rock, 1. Paper, 2. Scissors");
+
 const computerSelection = getComputerChoice();
 console.log(computerSelection);
 
